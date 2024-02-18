@@ -78,5 +78,15 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+//added for my photo and paragraph:
+const PORT = 5002;
+const dataPhoto = {
+  image: 'https://docs.google.com/document/d/1AD_KxIu5JrqCe1BUYyuQo0vQ9gdY9LjqX-UPU0Z337I/edit',
+  content: 'My name is Skylar Mogari, and I am a senior at NYU studying computer science with a minor in Astronomy. I am originally from Orange County, California. At NYU I am involved in a few clubs/organizations including TEDxNYU where I serve as the Director of Productions (and emcee). I am also involved with Girls Who Code(GWC), and the Persian Cultural Society(PCS). I have truly enjoyed living and exploring NYC for the past few years. My favorite activities here are going to museums, trying new restaurants and cafes, going for runs and walks, and much more. I plan on staying here after graduation to work as a software engineer. Ultimately, I hope to work in the aerospace industry where I can combine my passion for astronomy with my technical and administrative skills. '
+};
+app.get('./about_us', (req, res) => {
+  res.json(data);
+});
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
