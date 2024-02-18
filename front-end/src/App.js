@@ -5,7 +5,7 @@ import MessageStandalone from './MessageStandalone'
 import Home from './Home'
 import Header from './Header'
 import Footer from './Footer'
-import AboutUs from './AboutUs'
+import AboutUs from './About'
 
 const App = props => {
   return (
